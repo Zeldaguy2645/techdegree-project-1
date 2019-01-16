@@ -60,8 +60,7 @@ function printQuote() {
 		var randomQuote = getRandomQuote();
 		var message = '<p class ="quote">' + randomQuote.quote + '</p>';
 		message += '<p class ="source">' + randomQuote.source + '</p>';
-		document.getElementById('quote-box').innerHTML = message;
-		document.write(message);
+		document.getElementById("quote-box").innerHTML = message;
 
 };
 

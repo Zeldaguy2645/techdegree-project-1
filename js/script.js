@@ -1,6 +1,6 @@
 
 // An array of objects with quotes to be generated randomly.
-var quotes [
+var quotes = [
 	{
 		quote: "You know you're in love when you can't fall asleep because reality is finally better than your dreams.",
 		source: "Dr. Suess"
@@ -48,11 +48,11 @@ var quotes [
 ];
 
 // This generates a random number to be able to generate a random quote.
-function getRandomQuote(quotes) {
+function getRandomQuote() {
 		var randomNumber = Math.floor((Math.random() * quotes.length));
 		var randomQuote =
 			quotes[randomNumber];
-			return randomNumber;
+			return randomQuote;
 };
 
 

@@ -55,7 +55,10 @@ function getRandomQuote() {
 			return randomQuote;
 };
 
-
+/***
+	This calls the getRandomQuote function and stores it in a variable.
+ 	Then a variable is created to hold the HTML elements for the message, and then it is printed out.
+***/
 function printQuote() {
 		var randomQuote = getRandomQuote();
 		var message = '<p class ="quote">' + randomQuote.quote + '</p>';
@@ -63,22 +66,5 @@ function printQuote() {
 		document.getElementById("quote-box").innerHTML = message;
 
 };
-
-
-
-
-/***
-  Create the `printQuote` function to:
-   - call the `getRandomQuote` function and assign it to a variable.
-   - use the properties of the quote object stored in the variable to
-     create your HTML string.
-   - use conditionals to make sure the optional properties exist before
-     they are added to the HTML string.
-   - set the `innerHTML` of the `quote-box` div to the HTML string.
-***/
-
-
-
-
 
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
